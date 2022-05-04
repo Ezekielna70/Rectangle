@@ -7,10 +7,10 @@ void PersegiPanjang::output()
 {
     float panjang = this->xmax - this->xmin;
     float lebar = this->ymax - this->ymin;
-    std::cout << "\nTitik tengah x    : " << (this->xmax - this->xmin) / 2 + this->xmax << "\n";
-    std::cout << "Titik tengah y    : " << (this->ymax - this->ymin) / 2 + this->ymax << "\n";
+    std::cout << "\nTitik tengah x    : " << this->xmax - (panjang / 2) << "\n";
+    std::cout << "Titik tengah y    : " << this->ymax - (lebar / 2) << "\n";
     std::cout << "Panjang   : " << panjang << "\n";
-    std::cout << "Lebar     : "<<lebar << "\n";
+    std::cout << "Lebar     : "<< lebar << "\n";
     std::cout << "X maksimum    : "<< this->xmax <<"\n";
     std::cout << "Y maksimum    : "<< this->ymax <<"\n";
     std::cout << "X minimum    : "<< this->xmin <<"\n";

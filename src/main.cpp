@@ -9,6 +9,7 @@ using namespace std;
 //Departemen    : Teknik Komputer
 //Kelas         : Kelas Proglan B
 
+
 void check(){
     cout << "Tekan Enter Untuk Melanjutkan ke Langkah Selanjutnya";
     cin.ignore();
@@ -55,7 +56,7 @@ int main()
         
     PersegiPanjang second(tengahx, tengahy, panjang, lebar);
     system("CLS||CLEAR");
-    cout << "\nApa yang ingin dilakukan kepada kedua persegi\n\n";
+    
 
     // cout <<"1. +";
     // cout <<"\n2. -";
@@ -71,6 +72,8 @@ int main()
     bool z = true;
     while(z)
     {
+        system("CLS||Clear");
+        cout << "\nApa yang ingin dilakukan kepada kedua persegi\n\n";
         cout <<"1. +";
         cout <<"\n2. -";
         cout <<"\n3. ++";
