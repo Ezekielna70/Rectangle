@@ -11,7 +11,8 @@ using namespace std;
 
 
 void check(){
-    cout << "Tekan Enter Untuk Melanjutkan ke Langkah Selanjutnya";
+    cout << "\nTekan Enter Untuk Melanjutkan ke Langkah Selanjutnya";
+    cin.ignore();
     cin.ignore();
     system("CLS||CLEAR");
 }
@@ -87,14 +88,24 @@ int main()
         {
         case 1:
             if(first==second)
+            {
                 hasil= first + second;
+                system("CLS||CLEAR");
+                cout << "\nOperasi Berhasil Dilakukan\n";
+                check();
+            }
             
             else
                 cout << "\nKedua Segi Empat Tidak Beririrsan\n";
             break;
         case 2:
             if(first==second)
+            {
                 hasil= first - second;
+                system("CLS||CLEAR");
+                cout << "\nOperasi Berhasil Dilakukan\n";
+                check();
+            }
             
             else 
                 cout << "\nKedua Segi Empat Tidak Beririrsan\n";
@@ -111,6 +122,9 @@ int main()
                 ++second;
                 hasil=second;
             }
+            system("CLS||CLEAR");
+            cout << "\nOperasi Berhasil Dilakukan\n";
+            check();
             break;
         }
         case 4:
@@ -125,12 +139,15 @@ int main()
                 ++second;
                 hasil=second;
             }
+            system("CLS||CLEAR");
+            cout << "\nOperasi Berhasil Dilakukan\n";
+            check();
             break;
         }
         case 5:
         {
             int ayam2=0;
-            cout << "\nPersegi ke-Berapa yang Ingin Ditunjukkan(1 atau 2)?: "; cin >> ayam2;
+            cout << "\nPersegi ke-Berapa yang Ingin Ditunjukkan?(1 atau 2): "; cin >> ayam2;
             switch (ayam2)
             {
             case 1:
@@ -145,6 +162,8 @@ int main()
                 cout << "Data: " << second[input];
                 break;
             }
+    
+            check();
             break;
         }
             
@@ -157,12 +176,16 @@ int main()
 
             //check();
             //system("CLS||Clear");
+            system("CLS||CLEAR");
+            cout << "\nOperasi Berhasil Dilakukan\n";
+            check();
             break;
 
         case 7:
             system("CLS||CLEAR");
             hasil.output();
             z = false;
+            
             break;
         
         default:
