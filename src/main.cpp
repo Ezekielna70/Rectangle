@@ -10,6 +10,7 @@ using namespace std;
 //Kelas         : Kelas Proglan B
 
 
+/*The above function is used to pause the program and clear the screen.*/
 void check(){
     cout << "\nTekan Enter Untuk Melanjutkan ke Langkah Selanjutnya";
     cin.ignore();
@@ -31,6 +32,7 @@ int main()
     cout <<"Titik tengah X    : "; cin>>tengahx;
     cout <<"Titik tengah Y    : "; cin>>tengahy;
 
+    /* Used to make sure that the width is always greater than the length. */
     if(panjang < lebar){
         float cek1;
         cek1 = panjang;
@@ -57,15 +59,6 @@ int main()
         
     PersegiPanjang second(tengahx, tengahy, panjang, lebar);
     system("CLS||CLEAR");
-    
-
-    // cout <<"1. +";
-    // cout <<"\n2. -";
-    // cout <<"\n3. ++";
-    // cout <<"\n4. --";
-    // cout <<"\n5. []";
-    // cout <<"\n6. ==";
-    // cout <<"\n7. Melihat Hasil";
 
     PersegiPanjang hasil(0,0,0,0);
     int index;
