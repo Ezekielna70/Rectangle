@@ -89,10 +89,10 @@ void PersegiPanjang::operator--()
 
     //float luas = temp_panjang * temp_lebar;
 
-    xmax = (panjang - temp_panjang)/2 - xmax;
-    ymax = (lebar - temp_lebar)/2 - ymax;
-    xmin = (panjang - temp_panjang)/2 + xmin;
-    ymin = (lebar - temp_lebar)/2 + ymin;
+    xmax = abs((panjang - temp_panjang)/2 - xmax);
+    ymax = abs((lebar - temp_lebar)/2 - ymax);
+    xmin = abs((panjang - temp_panjang)/2 + xmin);
+    ymin = abs((lebar - temp_lebar)/2 + ymin);
 
 }
 void PersegiPanjang::operator--(int){}
