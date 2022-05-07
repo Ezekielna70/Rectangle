@@ -125,11 +125,11 @@ int main()
             int ayam1=0;
             cout << "\nPersegi ke-Berapa yang Ingin Diubah(1 atau 2): "; cin >> ayam1;
             if(ayam1==1){
-                ++first;
+                --first;
                 hasil=first;
             }
             else if(ayam1==2) {
-                ++second;
+                --second;
                 hasil=second;
             }
             system("CLS||CLEAR");
