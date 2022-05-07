@@ -8,7 +8,7 @@ using namespace std;
 //NRP           : 5024211038
 //Departemen    : Teknik Komputer
 //Kelas         : Kelas Proglan B
-
+//https://github.com/Ezekielna70/Rectangle
 
 /*The above function is used to pause the program and clear the screen.*/
 void check(){
