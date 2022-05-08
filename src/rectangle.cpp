@@ -62,18 +62,18 @@ PersegiPanjang PersegiPanjang::operator-(PersegiPanjang kotak)
 void PersegiPanjang::operator++()
 {
     float panjang = this->xmax - this->xmin;
-    panjang = abs(panjang);
     float lebar = this->ymax - this->ymin;
-    lebar = abs(lebar);
     float temp_panjang = panjang * 2;
     float temp_lebar = lebar * 2;
+    float titikx = panjang/2 + this->xmin;
+    float titiky = lebar/2 + this->ymin;
 
     //float luas = temp_panjang * temp_lebar;
 
-    this->xmax = (temp_panjang - panjang)/2 + this->xmax;
-    this->ymax = (temp_lebar - lebar)/2 + this->ymax;
-    this->xmin = (temp_panjang - panjang)/2 - this->xmin;
-    this->ymin = (temp_lebar - lebar)/2 - this->ymin;
+    this->xmax = titikx + (temp_panjang/2);
+    this->ymax = titiky + (temp_lebar/2);
+    this->xmin = titikx - (temp_panjang/2);
+    this->ymin = titikx - (temp_lebar/2);
 
 }
 void PersegiPanjang::operator++(int){}
@@ -81,9 +81,9 @@ void PersegiPanjang::operator++(int){}
 void PersegiPanjang::operator--()
 {
     float panjang = this->xmax - this->xmin;
-    panjang = abs(panjang);
+    //panjang = abs(panjang);
     float lebar = this->ymax - this->ymin;
-    lebar = abs(lebar);
+    //lebar = abs(lebar);
     float titikx = panjang/2 + this->xmin;
     float titiky = lebar/2 + this->ymin;
     float temp_panjang = panjang / 2;
